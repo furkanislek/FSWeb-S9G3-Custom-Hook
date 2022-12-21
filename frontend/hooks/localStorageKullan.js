@@ -1,5 +1,4 @@
 
-
 function LocalStorageKullan() {
 
     function modeSwitch(mode){
@@ -9,6 +8,9 @@ function LocalStorageKullan() {
              localStorage.setItem("geceModu" , false);
            }
     }
+
+    
+  
 
   return modeSwitch;
 }

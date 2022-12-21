@@ -7,12 +7,12 @@ function GeceModuAc({coinData}) {
 
     const [geceModu, setGeceModu] = useState(false);
     
-
+    const mode = LocalStorageKullan();
     
     
     return (
-        <div  className={geceModu ? "dark-mode App" : "App"}>
-        <LocalStorageKullan mode = {geceModu} />
+        <div onClick={() => mode(!geceModu)} className={geceModu ? "dark-mode App" : "App"}>
+        
         <Navbar geceModu={geceModu} setGeceModu={setGeceModu} />
         <Charts coinData={coinData} />
     </div>

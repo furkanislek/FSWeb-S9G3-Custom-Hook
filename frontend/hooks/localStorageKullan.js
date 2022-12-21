@@ -1,16 +1,16 @@
-import React from 'react';
 
-function LocalStorageKullan({mode}) {
 
-    if(mode){
-        localStorage.setItem("geceModu" ,true);
-       }else {
-         localStorage.setItem("geceModu" , false);
-       }
+function LocalStorageKullan() {
 
-  return (
-    <></>
-  );
+    function modeSwitch(mode){
+        if(mode){
+            localStorage.setItem("geceModu" ,true);
+           }else {
+             localStorage.setItem("geceModu" , false);
+           }
+    }
+
+  return modeSwitch;
 }
 
 export default LocalStorageKullan;

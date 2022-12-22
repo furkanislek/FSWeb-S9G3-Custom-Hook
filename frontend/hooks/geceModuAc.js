@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Charts from "../components/Charts";
 import LocalStorageKullan from "./localStorageKullan";
@@ -10,10 +10,10 @@ function GeceModuAc({ coinData }) {
   console.log(window.localStorage);
 
   var classList = "App";
-  const latestTheme = localStorage;
+  const latestTheme = localStorage.geceModu === "true";
 
-  if (latestTheme.geceModu === "true") {
-    classList += " dark-mode App";
+  if (latestTheme) {
+    classList += " dark-mode";
   }
 
   return (

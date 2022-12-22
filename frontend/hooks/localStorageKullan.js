@@ -1,5 +1,5 @@
 
-function LocalStorageKullan() {
+function useLocalStorageKullan() {
 
     function modeSwitch(mode){
         if(mode){
@@ -15,4 +15,4 @@ function LocalStorageKullan() {
   return modeSwitch;
 }
 
-export default LocalStorageKullan;
+export default useLocalStorageKullan;
